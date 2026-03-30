@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Page background: light gray #F3F5F7 */
+    --background: 0.964 0.005 248;
+    /* Text dark #121417 */
+    --foreground: 0.13 0.01 250;
+
+    /* Card: white */
+    --card: 1 0 0;
+    --card-foreground: 0.13 0.01 250;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0.01 250;
+
+    /* Primary teal #1FA6A0 */
+    --primary: 0.63 0.1 187;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.94 0.01 240;
+    --secondary-foreground: 0.13 0.01 250;
+
+    --muted: 0.94 0.01 240;
+    /* Text gray #6B7785 */
+    --muted-foreground: 0.55 0.02 245;
+
+    --accent: 0.92 0.03 185;
+    --accent-foreground: 0.26 0.065 202;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.9 0.005 245;
+    --input: 0.9 0.005 245;
+    --ring: 0.63 0.1 187;
+
+    /* Success green #1E9E5A */
+    --success: 0.62 0.14 155;
+    --success-foreground: 1 0 0;
+
+    /* Header charcoal #1F2428 */
+    --header: 0.18 0.015 235;
+    /* Hero teal #0F3E46 */
+    --hero-from: 0.26 0.065 202;
+    --hero-to: 0.21 0.055 202;
+    /* Footer navy #0B1F2D */
+    --footer: 0.16 0.04 230;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.63 0.1 187;
+    --chart-3: 0.62 0.14 155;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.18 0.015 235;
+    --sidebar-foreground: 0.9 0.01 240;
+    --sidebar-primary: 0.63 0.1 187;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.22 0.025 235;
+    --sidebar-accent-foreground: 0.9 0.01 240;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.63 0.1 187;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
